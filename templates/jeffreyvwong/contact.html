@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!--faveicon  -->
+    <link rel="icon" href="/static/jeffreyvwong/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/static/jeffreyvwong/images/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8" />
+    <meta name="author" content="jvwong" />
+    <link rel="stylesheet" type="text/css" href="/static/jeffreyvwong/css/base.css">
+
+    <title>JVW {% block title %}{% endblock title %}</title>
+
+  </head>
+
+  <body class="contact">
+    <div class="contact-content">
+
+      <img id="contact" class="shadow" src="/static/jeffreyvwong/images/contact.jpg" />
+
+      <div class='contact-details'>
+        <h2>Jeffrey V Wong, Ph.D.</h2>
+
+        <div class="contact-text">
+            <p>Based in Markham, Ontario, Canada<br>
+            phone: 647 886 0781<br>
+            email: jeff.wong [at] jeffreyvwong [dot] ca<br>
+        </div>
+      </div>
+
+      <div class="contact-links">
+        <a href="https://twitter.com/jraywo"><img title="@jraywo" id="twitter-logo" src="/static/jeffreyvwong/images/assets/Twitter_logo_blue.png"/></a>
+        <a href="https://www.facebook.com/jeff.wong.7967"><img title="Facebook" id="facebook-logo" src="/static/jeffreyvwong/images/assets/FB-f-Logo__blue_512.png"/></a>
+        <a href="http://lnkd.in/WgyJvD"><img title="Linked In" id="linkedin-logo" src="/static/jeffreyvwong/images/assets/LinkedIn.png"/></a>
+      </div>
+    </div>
+
+
+    <div class="contact footer">
+      <table>
+        <tr>
+          <td>
+            <a name="Home" href = "{% url 'jeffreyvwong_home' %}">Home</a>
+          </td>
+          <td>
+            <a name="Bio" href = "{% url 'jeffreyvwong_bio' %}">Bio</a>
+          </td>
+          <td>
+            <a name="Skills" href = "{% url 'jeffreyvwong_skills' %}">Skills</a>
+          </td>
+          <td>
+            <a name="CV" href = "{% url 'jeffreyvwong_cv' %}">CV</a>
+          </td>
+          <td>
+            <a name="Blog" href = "http://jraywo.no-ip.ca">Blog</a>
+          </td>
+          <td>
+            <a name="Admin"  href = "{% url 'admin:index' %}">Admin</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+  </body>
+</html>
+
+
+
