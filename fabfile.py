@@ -2,7 +2,7 @@ from __future__ import with_statement
 from fabric.api import *
 
 def commit():
-    with settings(warn_only=True):
+    with settings(warn_only=False):
         local('git commit -a -m "latest update"')
 
 def push():
