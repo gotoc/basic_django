@@ -8,6 +8,9 @@ def commit():
 def push():
     local("git push origin master")
 
+def collectstatic():
+    local("python manage.py collectstatic") 
+
 def compush():
     commit()
     push()
