@@ -8,13 +8,14 @@
 {% block content %}
 
 <div class="topic-list">
-     
      {% for object in page_obj.object_list %}
           <div class="topic-container">
 
                <!-- Cover Fade -->
                <figure class="effeckt-caption shadow" data-effeckt-type="cover-fade">
-                 <img class="teaser" src="/static/jeffreyvwong/images/{{ object.snippet_tease }}" alt="{{ object.snippet_tease }}">
+                 {% if object.snippet_tease %}
+                    <img class="teaser" src="/static/jeffreyvwong/images/{{ object.snippet_tease }}" alt="{{ object.snippet_tease }}">
+                 {% endif %}
                  <figcaption>
                    <a class="effeckt-figcaption-link" href="{{ object.get_absolute_url }}">
                          <div class="effeckt-figcaption-wrap">
