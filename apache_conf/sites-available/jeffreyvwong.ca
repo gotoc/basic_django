@@ -4,6 +4,7 @@
         ServerAlias www.jeffreyvwong.ca
         WSGIScriptAlias / /var/www/jeffreyvwong/wsgi.py
         Alias /static/ /var/www/jeffreyvwong/static/
+        Alias /media/ /var/www/jeffreyvwong/media/
         <Location "/static/">
             Options -Indexes
         </Location>
