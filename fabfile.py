@@ -2,15 +2,15 @@ from __future__ import with_statement
 from fabric.api import *
 
 def commit():
-    local('git commit -a -m "latest update"')
+    with settings(warn_only=True):
+        local('git commit -a -m "latest update"')
 
 def push():
     local("git push origin master")
 
 def compush():
-    with settings(warn_only=True):
-        commit()
-        push()
+    commit()
+    push()
 
 env.hosts = ['jvwong@107.170.63.152']
 
