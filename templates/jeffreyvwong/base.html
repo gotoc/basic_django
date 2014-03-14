@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      
+      <!--faveicon  -->
+      <link rel="icon" href="/static/jeffreyvwong/images/favicon.ico" type="image/x-icon">
+      <link rel="shortcut icon" href="/static/jeffreyvwong/images/favicon.ico" type="image/x-icon">
+
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+      {% block meta_description %}
+      <meta name="description" content="Jeffrey V Wong. Main navigation page with links to my publications, work
+                  involving mathematical modeling along with efforts in teaching, analytics and data visualization" />
+      {% endblock meta_description %}
+      <meta name="author" content="jeffrey v wong" />
+
+      <!-- Third party javascript -->
+      <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+      <script>
+        (function(){
+
+          // store the name of the Analytics object
+          window.GoogleAnalyticsObject = 'ga';
+
+          // check whether the Analytics object is defined
+          if (!('ga' in window)){
+
+            // define the Analytics object
+            window.ga = function(){
+
+              // add the tasks to the queue
+              window.ga.q.push(arguments);
+
+            };
+
+            // create the queue
+            //after the immediate function, arguments are pushed in
+            window.ga.q = [];
+
+          }
+
+          // store the current timestamp
+          window.ga.l =  (new Date()).getTime();
+
+          // create a new script element
+          var script = document.createElement('script');
+          script.src = '//www.google-analytics.com/analytics.js';
+          script.async = true;
+
+          // insert the script element into the document
+          var firstScript = document.getElementsByTagName('script')[0]; //grab the first script tag
+          firstScript.parentNode.insertBefore(script, firstScript); //stick ga script before the first tag found
+
+        })();
+
+        ga('create', 'UA-48883466-1', 'jeffreyvwong.ca'); //each element is pushed into q
+        ga('send', 'pageview');
+
+      </script>
+
+      <!-- Stylesheets -->
+      <link rel="stylesheet" type="text/css" href="/static/jeffreyvwong/css/base.css">
+
+      <title>Jeffrey V Wong {% block title %}{% endblock title %}</title>
+      {% block head %}
+      {% endblock head %}
+
+</head>
+
+<body>
+
+      <div class="header">
+        {% block header %}
+        <a href="{% url 'jeffreyvwong_home' %}">
+           <h1 class="header-title">Jeffrey Wong</h1>
+        </a>
+        {% endblock header %}
+      </div>  
+
+ 	
+      <div class="content">
+	      {% block content %}
+	      {% endblock content %}   
+      </div>
+      
+	
+      <div class="footer contact">
+        {% block footer %}
+        <table>
+            <tr>
+              <td>
+                <a name="Bio" href = "{% url 'jeffreyvwong_bio' %}">Bio</a>
+              </td>
+              <td>
+                <a name="Skills" href = "{% url 'jeffreyvwong_skills' %}">Skills</a>
+              </td>
+              <td>
+                <a name="CV" href = "{% url 'jeffreyvwong_cv' %}">CV</a>
+              </td>
+              <td>
+                <a name="Contact" href = "{% url 'jeffreyvwong_contact' %}">Contact</a>
+              </td>
+              <td>
+                <a name="Blog" href = "http://jraywo.no-ip.ca">Blog</a>
+              </td>
+              <td>
+                <a name="Admin"  href = "{% url 'admin:index' %}">Admin</a>
+              </td>
+            </tr>
+        </table>
+        {% endblock footer %}
+      </div>
+  
+</body>
+</html>
