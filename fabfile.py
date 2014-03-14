@@ -8,8 +8,9 @@ def push():
     local("git push origin master")
 
 def compush():
-    commit()
-    push()
+    with settings(warn_only=True):
+        commit()
+        push()
 
 env.hosts = ['jvwong@107.170.63.152']
 
