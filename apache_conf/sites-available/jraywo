@@ -1,0 +1,10 @@
+<VirtualHost *:80>
+        ServerAdmin jvwong@outlook.com
+        ServerName jraywo.ca
+        ServerAlias www.jraywo.ca
+        WSGIScriptAlias / /var/www/jraywo/wsgi.py
+        Alias /static/ /var/www/jraywo/static/
+        <Location "/static/">
+            Options -Indexes
+        </Location>
+</VirtualHost>
