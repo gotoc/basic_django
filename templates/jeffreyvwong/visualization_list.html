@@ -14,7 +14,7 @@
                <!-- Cover Fade -->
                <figure class="effeckt-caption shadow" data-effeckt-type="cover-fade">
                  {% if object.snippet_tease %}
-                   <img class="teaser" src="/static/jeffreyvwong/media/{{ object.snippet_tease }}" alt="{{ object.snippet_tease }}">
+                   <img class="teaser" src="{{ object.snippet_tease.url }}" alt="{{ object.snippet_tease.url }}">
                  {% endif %}
                  <figcaption>
                    <a class="effeckt-figcaption-link" href="{{ object.get_absolute_url }}">

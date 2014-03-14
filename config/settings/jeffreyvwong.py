@@ -9,7 +9,6 @@ SETTINGS_DIR = os.path.abspath(os.path.dirname(__file__))
 CONFIG_DIR = os.path.abspath(os.path.join(SETTINGS_DIR, "..")) 
 PARENT_DIR = os.path.abspath(os.path.join(CONFIG_DIR, ".."))
 STATIC_PATH = os.path.abspath(os.path.join(PARENT_DIR, "static"))
-MEDIA_PATH = os.path.abspath(os.path.join(PARENT_DIR, "static/jeffreyvwong/media/"))
 
 DATABASE = ".".join([APP_NAME, "db"])
 DATABASE_NAME = os.path.abspath(os.path.join(PARENT_DIR, "sites", APP_NAME, DATABASE))
@@ -65,7 +64,7 @@ USE_TZ = False
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/var/www/example.com/media/"
-MEDIA_ROOT = MEDIA_PATH
+MEDIA_ROOT = '/var/www/jeffreyvwong/media/'
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
@@ -145,8 +144,6 @@ INSTALLED_APPS = (
     'tagging',
     'json_field',
     'jeffreyvwong'
-    # Uncomment the next line to enable admin documentation:
-    # 'django.contrib.admindocs',
 )
 
 
