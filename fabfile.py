@@ -17,7 +17,7 @@ def remote_collectstatic():
         run("/home/jvwong/.virtualenvs/practical_django/bin/python2.7 manage.py collectstatic")
 
 def remote_restart_apache2():
-    sudo('service apache2 restart')
+    sudo('service apache2 reload')
 
 def reboot():
     sudo('reboot')
