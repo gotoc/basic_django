@@ -8,12 +8,12 @@ server {
 
 	location /static {
 		autoindex on;
-		alias 	/var/www/django_projects/static;
+		alias 	/var/www/django_projects/static/;
 	}
 
 	location /media {
 		autoindex on;
-		alias 	/var/www/django_projects/media;
+		alias 	/var/www/django_projects/media/jraywo/;
 	}
 
 	location / {

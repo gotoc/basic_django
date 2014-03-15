@@ -7,19 +7,19 @@ server {
 server {
 	listen		80; 
 	server_name www.jeffreyvwong.ca;
-	#server_name 127.0.0.1:80;
+#	server_name 127.0.0.1:80;
 
 	# Allow file uploads
 	client_max_body_size 50M;
 
 	location /static {
 		autoindex on;
-		alias 	/var/www/django_projects/static;
+		alias 	/var/www/django_projects/static/;
 	}
 
 	location /media {
 		autoindex on;
-		alias 	/var/www/django_projects/media;
+		alias 	/var/www/django_projects/media/jeffreyvwong/;
 	}
 
 	location / {
