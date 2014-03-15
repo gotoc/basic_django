@@ -4,21 +4,33 @@ APP_NAME = "jraywo"
 
 DEBUG = True
 
+DELICIOUS_USER = 'jvwong'
+DELICIOUS_PASSWORD = 'Blanka27'
+
+ADMINS = (
+    ('Jeffrey Wong', 'djangomonitor@gmail.com'),
+)
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = '587'
+DEFAULT_FROM_EMAIL = 'jvwong@outlook.com'
+EMAIL_HOST_USER = 'djangomonitor@gmail.com'
+EMAIL_HOST_PASSWORD = '2$JulyK4!a4'
+EMAIL_USE_TLS = True
+
+AKISMET_API_KEY = '7c141c157e65'
+
 #Pre-configured paths
-SETTINGS_DIR = os.path.abspath(os.path.dirname(__file__)) 
-CONFIG_DIR = os.path.abspath(os.path.join(SETTINGS_DIR, "..")) 
+SETTINGS_DIR = os.path.abspath(os.path.dirname(__file__))
+CONFIG_DIR = os.path.abspath(os.path.join(SETTINGS_DIR, ".."))
 PARENT_DIR = os.path.abspath(os.path.join(CONFIG_DIR, ".."))
 STATIC_PATH = os.path.abspath(os.path.join(PARENT_DIR, "static"))
 
 DATABASE = ".".join([APP_NAME, "db"])
 DATABASE_NAME = os.path.abspath(os.path.join(PARENT_DIR, "sites", APP_NAME, DATABASE))
-URLCONF_MODULE = ".".join(["config.urls",APP_NAME]) 
-TEMPLATE_PATH = os.path.abspath(os.path.join(PARENT_DIR, "templates")) 
+URLCONF_MODULE = ".".join(["config.urls",APP_NAME])
+TEMPLATE_PATH = os.path.abspath(os.path.join(PARENT_DIR, "templates"))
 TEMPLATE_DEBUG = DEBUG
-
-ADMINS = (
-    ('Jeffrey Wong', 'jvwong@outlook.com'),
-)
 
 MANAGERS = ADMINS
 
@@ -49,7 +61,7 @@ TIME_ZONE = 'America/Toronto'
 # http://www.i18nguy.com/unicode/language-identifiers.html
 LANGUAGE_CODE = 'en-us'
 
-SITE_ID = 2
+SITE_ID = 1
 
 # If you set this to False, Django will make some optimizations so as not
 # to load the internationalization machinery.
@@ -64,7 +76,7 @@ USE_TZ = False
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/var/www/example.com/media/"
-MEDIA_ROOT = '/var/www/jraywo/media/'
+MEDIA_ROOT = '/var/www/django_projects/media/jraywo/'
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
@@ -75,7 +87,7 @@ MEDIA_URL = '/media/'
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/var/www/example.com/static/"
-STATIC_ROOT = '/var/www/jraywo/static/'
+STATIC_ROOT = '/var/www/django_projects/static/'
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"

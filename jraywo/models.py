@@ -17,7 +17,7 @@ class Link(models.Model):
     pub_date = models.DateTimeField(auto_now_add=True)
     
     #Fields to store generated HTML
-    descripton_html = models.TextField(editable=False, blank=True)
+    description_html = models.TextField(editable=False, blank=True)
     
     #Meta data 
     posted_by = models.ForeignKey(User)

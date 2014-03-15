@@ -1,5 +1,5 @@
 from django.shortcuts import render_to_response
-from coltrane.models import Entry
+from jraywo.models import Entry
 from django.db.models import Q
 
 def search(request):
