@@ -1,7 +1,13 @@
 server {
+	listen 80;
+	server_name jeffreyvwong.ca *.jeffreyvwong.ca;
+	return 301 $scheme://www.jeffreyvwong.ca$request_uri;
+}
+
+server {
 	listen		80; 
-	server_name jraywo.no-ip.ca;
-	#server_name 127.0.0.1:80;
+	server_name www.jeffreyvwong.ca;
+        #server_name 127.0.0.1;
 
 	# Allow file uploads
 	client_max_body_size 50M;
@@ -13,7 +19,7 @@ server {
 
 	location /media {
 		autoindex on;
-		alias 	/var/www/django_projects/media/jraywo/;
+		alias 	/var/www/django_projects/media/jeffreyvwong/;
 	}
 
 	location / {
@@ -22,7 +28,7 @@ server {
                 proxy_redirect off;
                 proxy_set_header X-Real-IP $remote_addr;
                 proxy_set_header X-Scheme $scheme;
-                proxy_pass http://jraywoes;
+                proxy_pass http://jeffoes;
 	}
 
 }
