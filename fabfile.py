@@ -13,8 +13,8 @@ def remote_pull():
 
 def remote_collectstatic():
     code_dir = '/home/jvwong/projects/django_projects/'
-        with cd(code_dir):
-            sudo("python manage.py collectstatic")
+    with cd(code_dir):
+        sudo("python manage.py collectstatic")
 
 def remote_restart_apache2():
     sudo('service apache2 restart')
