@@ -14,7 +14,7 @@ def remote_pull():
 def remote_collectstatic():
     code_dir = '/home/jvwong/projects/django_projects/'
     with cd(code_dir):
-        sudo("python manage.py collectstatic")
+        run("/home/jvwong/.virtualenvs/practical_django/bin/python2.7 manage.py collectstatic")
 
 def remote_restart_apache2():
     sudo('service apache2 restart')
