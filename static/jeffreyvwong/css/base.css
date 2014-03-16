@@ -28,16 +28,14 @@
         text-indent: 50px;
     }
 
+    a:link, a:visited{
+        text-decoration: none;
+        outline: 0;
+    }
+
 /*----------------------------
 	Begin: header
 -----------------------------*/
-
-  .header a:link, a:visited{
-    text-decoration: none;
-    outline: 0;
-  }
-
-
   .header{
       height     : 100%;
       width      : 80%;

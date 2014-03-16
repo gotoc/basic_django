@@ -9,7 +9,7 @@
     <div class="topic-list">
 
         <div class="topic-container">
-            <a name="visualizations"><h2 class="home-subsection-title">#Visualization</h2></a>
+            <a href="{% url 'jeffreyvwong_visualization' %}" name="visualizations"><h2 class="home-subsection-title">#Visualization</h2></a>
 
           <figure class="effeckt-caption shadow" data-effeckt-type="cover-fade">
                 <img class="topic" src="/static/jeffreyvwong/images/panels/household.jpg" alt="">
@@ -28,7 +28,7 @@
 
 
         <div class="topic-container">
-            <a name="modelling"><h2 class="home-subsection-title">#Modelling</h2></a>
+            <a href="{%  url 'jeffreyvwong_modelling' %}" name="modelling"><h2 class="home-subsection-title">#Modelling</h2></a>
 
             <figure class="effeckt-caption shadow" data-effeckt-type="cover-fade">
                 <img src="/static/jeffreyvwong/images/panels/flow.jpg" alt="">
@@ -42,29 +42,13 @@
             </figure>
         </div>
 
-        <!--<div class="topic-container">-->
-
-            <!--<a name="learn"><h2 class="home-subsection-title">#Learning</h2></a>-->
-              <!--<figure class="effeckt-caption shadow" data-effeckt-type="cover-fade">-->
-                <!--<img src="/static/jeffreyvwong/images/panels/questionnaire.jpg" alt="">-->
-                <!--<figcaption>-->
-                    <!--<a class="effeckt-figcaption-link" href="{% url 'jeffreyvwong_learning' %}">-->
-                        <!--<div class="effeckt-figcaption-wrap">-->
-                            <!--<p>A first course in programming using Javascript</p>-->
-                        <!--</div>-->
-                    <!--</a>-->
-                <!--</figcaption>-->
-            <!--</figure>-->
-
-        <!--</div>-->
-
         <div class="topic-container">
-            <a name="publication"><h2 class="home-subsection-title">#Publications</h2></a>
+            <a href="{% url 'jeffreyvwong_publication' %}" name="publication"><h2 class="home-subsection-title">#Publications</h2></a>
 
               <figure class="effeckt-caption shadow" data-effeckt-type="cover-fade">
                 <img src="/static/jeffreyvwong/images/panels/cellcover.jpg" alt="">
                 <figcaption>
-                    <a class="effeckt-figcaption-link" href="{% url 'jeffreyvwong_publication'%}">
+                    <a class="effeckt-figcaption-link" href="{% url 'jeffreyvwong_publication' %}">
                         <div class="effeckt-figcaption-wrap">
                             <p>Published work in experimental and computational biology</p>
                         </div>
