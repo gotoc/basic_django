@@ -1,6 +1,11 @@
 {% extends "jeffreyvwong/base.html" %}
 
-{% block title %} {{ block.super }} | Publication{% endblock title %}
+{% block title %} Publications{{ block.super }}{% endblock title %}
+
+{% block meta_description %}
+    <meta name="description" content="Description of published academic work in biomedical engineering,
+        systems biology, experimental therapeutics, and cancer biology." />
+{% endblock meta_description %}
 
 {% block content %}
 

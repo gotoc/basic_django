@@ -1,6 +1,9 @@
 {% extends "jeffreyvwong/base.html" %}
 
-{% block title %} {{ block.super }} | Curriculum Vitae {% endblock title %}
+{% block title %} Curriculum Vitae{{ block.super }}{% endblock title %}
+{% block meta_description %}
+    <meta name="description" content="Curriculum Vitae." />
+{% endblock meta_description %}
 
 {% block head %}
 <style type="text/css">

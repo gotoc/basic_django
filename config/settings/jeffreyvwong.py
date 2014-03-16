@@ -2,7 +2,7 @@ import os
 
 APP_NAME = "jeffreyvwong"
 
-DEBUG = False
+DEBUG = True
 
 #Pre-configured paths
 SETTINGS_DIR = os.path.abspath(os.path.dirname(__file__)) 
@@ -131,6 +131,7 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
+    'django.contrib.sitemaps',
     'django.contrib.sites',
     'django.contrib.staticfiles',
     'django.contrib.admin',

@@ -1,8 +1,11 @@
 {% extends "jeffreyvwong/base.html" %}
-{% block head %}
-{% endblock head %}
 
-{% block title %} {{ block.super }} | Home {% endblock title %} 
+{% block title %}Home {{ block.super }}{% endblock title %}
+
+{% block meta_description %}
+    <meta name="description" content="Main navigation page with links to my publications, work
+                  involving mathematical modeling along with efforts in teaching, analytics and data visualization" />
+{% endblock meta_description %}
 
 {% block content %}
 
