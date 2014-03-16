@@ -7,6 +7,8 @@ from django.contrib import flatpages
 from django.views.generic.base import TemplateView
 from jeffreyvwong.sitemaps import SnippetSitemap, PageSitemap
 
+from jeffreyvwong.views import RobotsView
+
 sitemaps = {
     'snippets': SnippetSitemap(),
     'pages': PageSitemap([ 'jeffreyvwong_home'
@@ -33,6 +35,7 @@ urlpatterns = patterns('',
     url(r'^publications/$',  TemplateView.as_view(template_name='jeffreyvwong/publication.html'), name='jeffreyvwong_publication'),
 
     url(r'^media/(?P<path>.*)$', 'django.views.static.serve', { 'document_root': settings.MEDIA_ROOT }),
-    url(r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': sitemaps})
+    url(r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': sitemaps}),
+    url(r'^robots\.txt$', RobotsView.as_view(), name='robots')
 )
 
