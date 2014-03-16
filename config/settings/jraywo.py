@@ -2,7 +2,7 @@ import os
 
 APP_NAME = "jraywo"
 
-DEBUG = True
+DEBUG = False
 
 DELICIOUS_USER = 'jvwong'
 DELICIOUS_PASSWORD = 'Blanka27'
