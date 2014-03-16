@@ -45,6 +45,15 @@ class QuestionnaireSuccessView(TemplateView):
         #logging.error(context)
         return context
 
+
+class RobotsView(TemplateView):
+    def get(self, request, *args, **kwargs):
+        t = loader.get_template('jeffreyvwong/seo/robots.txt')
+        c = Context({})
+        contents = t.render(c)
+        response = HttpResponse(contents, content_type="text/plain")
+        return response
+
     
    
 
