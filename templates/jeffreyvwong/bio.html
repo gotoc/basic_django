@@ -1,6 +1,10 @@
 {% extends "jeffreyvwong/base.html" %}
 
-{% block title %} {{ block.super }} | Bio {% endblock title %}
+{% block title %} Bio{{ block.super }}{% endblock title %}
+
+{% block meta_description %}
+    <meta name="description" content="Biographical sketch related to work experience and education." />
+{% endblock meta_description %}
 
 {% block head %}
 <style type="text/css">

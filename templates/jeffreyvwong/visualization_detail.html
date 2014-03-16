@@ -1,9 +1,12 @@
 {% extends "jeffreyvwong/base.html" %}
 
-{% block title %} {{ block.super }} | Snippet {% endblock title %} 
+{% block title %}Snippet | {{ object.title }}{{ block.super }}{% endblock title %}
 
 {% block head %}
-<link rel="stylesheet" type="text/css" href="/static/jeffreyvwong/css/pygments.css">
+    {% block meta_description %}
+        <meta name="description" content="Web visualization snippet for '{{ object.title }}'. " />
+    {% endblock meta_description %}
+    <link rel="stylesheet" type="text/css" href="/static/jeffreyvwong/css/pygments.css">
 {% endblock head %}
 
 
@@ -15,17 +18,13 @@
         {{ object.title }}
     </h2>
 
-    <!--<iframe scrolling="no" marginheight="0" marginwidth="0" src="">-->
-    <!--</iframe>-->
-     <!---->
-     <p class="snippet-description">               
-          {{ object.description_html | safe }}             
-     </p>
+    <p class="snippet-description">
+        {{ object.description_html | safe }}
+    </p>
 
     <p class="snippet-highlighted_code">
-          <!--<span class="snippet-language"> {{ object.language.name }} </span>             -->
-          {{ object.highlighted_code | safe }}             
-     </p>
+        {{ object.highlighted_code | safe }}
+    </p>
      
      <p class="snippet-date">
           <span class="snippet-date">{{ object.pub_date | date:"F j, Y" }}</span>           
@@ -35,4 +34,3 @@
 
 
 {% endblock content %}
- 

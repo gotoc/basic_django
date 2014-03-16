@@ -8,10 +8,11 @@
 
       <meta charset="utf-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
       {% block meta_description %}
-      <meta name="description" content="Jeffrey V Wong. Main navigation page with links to my publications, work
-                  involving mathematical modeling along with efforts in teaching, analytics and data visualization" />
+          <meta name="description" content="jeffreyvwong.ca - Web property of Jeffrey V Wong" />
       {% endblock meta_description %}
+
       <meta name="author" content="jeffrey v wong" />
 
       <!-- Third party javascript -->
@@ -61,7 +62,7 @@
       <!-- Stylesheets -->
       <link rel="stylesheet" type="text/css" href="/static/jeffreyvwong/css/base.css">
 
-      <title>Jeffrey V Wong {% block title %}{% endblock title %}</title>
+      <title>{% block title %}{% endblock title %} - jeffreyvwong.ca </title>
       {% block head %}
       {% endblock head %}
 
@@ -104,7 +105,7 @@
                 <a name="Blog" href = "http://jraywo.no-ip.ca">Blog</a>
               </td>
               <td>
-                <a name="Admin"  href = "{% url 'admin:index' %}">Admin</a>
+                <a name="Site"  href = "{% url 'admin:index' %}">Admin</a>
               </td>
             </tr>
         </table>
