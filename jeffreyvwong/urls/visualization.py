@@ -4,6 +4,7 @@ from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from django.views.generic.base import TemplateView, View
 from jeffreyvwong.views import BlogosphereView
+import logging
 
 urlpatterns = patterns('',
     url(r'^$',
