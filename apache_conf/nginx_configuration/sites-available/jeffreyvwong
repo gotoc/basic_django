@@ -1,13 +1,12 @@
 server {
 	listen 80;
-	server_name jeffreyvwong.ca *.jeffreyvwong.ca;
-	return 301 $scheme://www.jeffreyvwong.ca$request_uri;
+	server_name www.jeffreyvwong.ca;
+	return 301 $scheme://jeffreyvwong.ca$request_uri;
 }
 
 server {
 	listen		80; 
-	server_name www.jeffreyvwong.ca;
-        #server_name 127.0.0.1;
+	server_name jeffreyvwong.ca;
 
 	# Allow file uploads
 	client_max_body_size 50M;
