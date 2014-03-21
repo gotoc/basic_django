@@ -340,27 +340,6 @@
 -----------------------------*/
 
 /*----------------------------
-  Start: Learning
------------------------------*/
-
-    #poster-container{
-        float: left;
-    }
-
-    .learning-poster{
-        width: 325px;
-    }
-
-    .clear_float{
-        clear: both;
-    }
-
-/*----------------------------
-  End: Learning
------------------------------*/
-
-
-/*----------------------------
       Begin: Bio
 -----------------------------*/
 
@@ -374,6 +353,12 @@
 /*----------------------------
       Begin: CV
 -----------------------------*/
+
+.cv-download{
+    position: absolute;
+    width: 10em;
+    left: 70%;
+}
       
   div#resume{
 	position: relative;

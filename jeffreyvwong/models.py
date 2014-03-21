@@ -38,7 +38,7 @@ class Snippet(models.Model):
     code = models.TextField( blank = True )
     highlighted_code = models.TextField(editable = False)
     tags = TagField()
-    snippet_tease = models.ImageField( upload_to = 'snippet', null=True, blank=True )
+    snippet_tease = models.ImageField(upload_to='snippet', null=True, blank=True)
     pub_date = models.DateTimeField(editable = True)
     updated_date = models.DateTimeField(editable = False)
     

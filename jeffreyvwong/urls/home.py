@@ -20,7 +20,14 @@ sitemaps = {
                         ,  'jeffreyvwong_publication'
                         ])
 }
-urlpatterns = patterns('',
+
+urlpatterns = patterns('')
+
+if settings.DEBUG:
+    # static files (images, css, javascript, etc.)
+    urlpatterns = patterns('', (r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}))
+
+urlpatterns += patterns('',
 
     url(r'^$', TemplateView.as_view(template_name='jeffreyvwong/home.html'), name='jeffreyvwong_home'),
 
@@ -34,7 +41,6 @@ urlpatterns = patterns('',
     url(r'^modelling/$',    TemplateView.as_view(template_name='jeffreyvwong/modelling.html'), name='jeffreyvwong_modelling'),
     url(r'^publications/$',  TemplateView.as_view(template_name='jeffreyvwong/publication.html'), name='jeffreyvwong_publication'),
 
-    url(r'^media/(?P<path>.*)$', 'django.views.static.serve', { 'document_root': settings.MEDIA_ROOT }),
     url(r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': sitemaps}),
     url(r'^robots\.txt$', RobotsView.as_view(), name='robots')
 )
