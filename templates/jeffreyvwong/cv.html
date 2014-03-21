@@ -6,14 +6,14 @@
 {% endblock meta_description %}
 
 {% block head %}
-<style type="text/css">
 
-    
-</style>
 {% endblock head %}
 
 {% block content %}
-  <div class="cv-download"><a href="{{ STATIC_URL }}jeffreyvwong/assets/jeffreyvwong_cv.pdf">Download CV (pdf)</a></div>
+
+  <!--<a href="{{ STATIC_URL }}jeffreyvwong/assets/jeffreyvwong_cv.pdf">-->
+      <a href="#" class="cv-download">PDF Version</a>
+  <!--</a>-->
   <h3 class="subsection"><a name="education">EDUCATION</a></h3>
   <table id="table-education">
     <colgroup>
@@ -618,8 +618,11 @@
 
   </table>
 
-
-
+    <script>
+        $(".cv-download").click(function(){
+            ga('send', 'event', 'button', 'click', 'cv-download', 0);
+        });
+    </script>
 
 {% endblock content %}
 
