@@ -110,10 +110,10 @@
 
   </style>
     <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script type="text/javascript" src="/static/jeffreyvwong/js/d3.v3.min.js"></script>
 </head>
   <body>
 
@@ -314,7 +314,7 @@
                     .attr("cy",function(d,i) { return i-0.25+"em"})
                     .attr("cx",0)
                     .attr("r","0.4em")
-                    .style("fill",function(d) { console.log(d.value.color);return d.value.color})
+                    .style("fill",function(d) { return d.value.color})
 
             // Reposition and resize the box
             var lbbox = li[0][0].getBBox()
