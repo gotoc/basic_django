@@ -50,6 +50,15 @@
       margin-bottom: 0.25em;
       opacity: 0.70;
     }
+
+    h2.header-title {
+        color: #000000;
+        text-decoration: underline;
+        font-size: 1.3em;
+        text-shadow: 1px 0px 0px #9d9573;
+        margin-bottom: 0.25em;
+        opacity: 0.70;
+    }
 /*----------------------------
 	End: header
 -----------------------------*/
@@ -314,7 +323,7 @@
 
     div.item{
         clear: both;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
 
     .blurb{
@@ -594,7 +603,7 @@
   .footer td{
     font-size: 0.9em;
     text-align: center;
-    width: 16%;
+    width: 20%;
     background: none;
   }
 

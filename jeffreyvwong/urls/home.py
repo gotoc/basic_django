@@ -31,8 +31,7 @@ urlpatterns += patterns('',
 
     url(r'^$', TemplateView.as_view(template_name='jeffreyvwong/home.html'), name='jeffreyvwong_home'),
 
-    url(r'^bio/$',     TemplateView.as_view(template_name='jeffreyvwong/bio.html'),     name='jeffreyvwong_bio'),
-    url(r'^skills/$',  TemplateView.as_view(template_name='jeffreyvwong/skills.html'),  name='jeffreyvwong_skills'),
+    url(r'^bio/$',     TemplateView.as_view(template_name='jeffreyvwong/background.html'),     name='jeffreyvwong_background'),
     url(r'^cv/$',      TemplateView.as_view(template_name='jeffreyvwong/cv.html'),      name='jeffreyvwong_cv'),
     url(r'^contact/$', TemplateView.as_view(template_name='jeffreyvwong/contact.html'), name='jeffreyvwong_contact'),
     url(r'^admin/', include(admin.site.urls)),
