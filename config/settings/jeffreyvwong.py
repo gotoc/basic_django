@@ -2,7 +2,7 @@ import os
 
 APP_NAME = "jeffreyvwong"
 
-DEBUG = False
+DEBUG = True #False
 
 #Pre-configured paths
 SETTINGS_DIR = os.path.abspath(os.path.dirname(__file__)) 
