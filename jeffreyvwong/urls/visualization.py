@@ -23,6 +23,7 @@ urlpatterns = patterns('',
 
     url(r'^blogosphere/$', TemplateView.as_view(template_name='jeffreyvwong/visual/blogosphere.html'),
                                                 name='jeffreyvwong_blogosphere'),
+
     url(r'^blogosphere_json/$', BlogosphereView.as_view(), name='jeffreyvwong_blogosphere_json'),
 
     url(r'^household/$', TemplateView.as_view(template_name='jeffreyvwong/visual/household.html'),
