@@ -103,7 +103,7 @@ class Entry(models.Model):
     #Meta data 
     author = models.ForeignKey(User)
     enable_comments = models.BooleanField(default=True)
-    featured =  models.BooleanField(default=False)
+    featured = models.BooleanField(default=False)
     slug = models.SlugField(unique_for_date='pub_date')
     status = models.IntegerField(choices=STATUS_CHOICES, default=LIVE_STATUS)
     pub_date = models.DateTimeField(editable = False)

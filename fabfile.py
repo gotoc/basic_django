@@ -22,10 +22,12 @@ def remote_restart_apache2():
 def reboot():
     sudo('reboot')
 
-def deploy(restart=True):
+
+def deploy(collectstatic=False):
     push()
     remote_pull()
-    remote_collectstatic()
-    with settings(warn_only=True):
-        if restart:
-            result = remote_restart_apache2()
+
+    if collectstatic:
+        remote_collectstatic()
+
+    remote_restart_apache2()
