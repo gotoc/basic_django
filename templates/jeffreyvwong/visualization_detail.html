@@ -2,18 +2,19 @@
 
 {% block title %}Snippet | {{ object.title }}{{ block.super }}{% endblock title %}
 
+{% block meta_description %}
+    <meta name="description" content="Web visualization snippet for '{{ object.title }}'. " />
+{% endblock meta_description %}
+
 {% block head %}
-    {% block meta_description %}
-        <meta name="description" content="Web visualization snippet for '{{ object.title }}'. " />
-    {% endblock meta_description %}
     <link rel="stylesheet" type="text/css" href="/static/jeffreyvwong/css/pygments.css">
 {% endblock head %}
 
 
+
 {% block content %}
-   
 <div class="snippet-detail-container">
-     
+
     <h2 class="snippet-title">
         {{ object.title }}
     </h2>
