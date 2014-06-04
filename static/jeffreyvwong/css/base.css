@@ -29,7 +29,7 @@
     }
 
     a:link, a:visited{
-        text-decoration: none;
+        color: #000000;
         outline: 0;
     }
 
@@ -41,6 +41,11 @@
       width      : 80%;
       max-width  : 800px;
       margin     : 0em auto;
+    }
+
+    .header a:link, a:visited{
+        text-decoration: none;
+        outline: 0;
     }
 
     h1.header-title {
@@ -66,11 +71,6 @@
 /*----------------------------
       Begin: content 
 -----------------------------*/
-.content a:link, a:visited{
-  color: #000000;
-  outline: 0;
-}
-
 .content{
   width      : 90%;
   max-width  : 900px;
@@ -507,11 +507,6 @@
     position: absolute;
     top:  15em;
     left: 4em;
-  }
-
-  .contact-text a:link, a:visited{
-    color: #9d9573;
-    text-decoration: none;
   }
 
   img#contact{

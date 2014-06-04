@@ -1,4 +1,12 @@
 {% extends "jeffreyvwong/base.html" %}
+{% block head %}
+        <style>
+            a:link, a:visited{
+                text-decoration: none;
+                outline: 0;
+            }
+        </style>
+{% endblock head %}
 
 {% block title %}Home {{ block.super }}{% endblock title %}
 
