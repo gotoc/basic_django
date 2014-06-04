@@ -12,7 +12,7 @@
 {% block content %}
 
   <a href="{{ STATIC_URL }}jeffreyvwong/assets/jeffreyvwong_cv.pdf">
-      <button class="cv-download">PDF Version</button>
+      <button class="cv-download">Download PDF</button>
   </a>
   <h3 class="subsection"><a name="education">EDUCATION</a></h3>
   <table id="table-education">
@@ -61,9 +61,48 @@
   </table>
 
   <br>    
-  <br>    
+  <br>
+
+    <h3 class="subsection"><a name="preparation">DATA CONSULTING</h3>
+    <table class="job-title">
+        <colgroup>
+            <col class="date" />
+            <col class="job-title" />
+            <col class="department" />
+            <col class="university" />
+        </colgroup>
+        <tr>
+            <td>2014</td>
+            <td>Data Analyst</td>
+            <td><a href="http://www.cityindicators.org/">Global City Indicator Facility (GCIF)</a></td>
+            <td>TORONTO, ON</td>
+        </tr>
+    </table>
+    <ul class="job-description">
+        <p class="job-summary">
+            The GCIF is an outgrowth of the <a href="http://www.globalcitiesinstitute.org/">Global Cities Institute</a> at the University of Toronto under the direction of <a href="http://politics.utoronto.ca/faculty/profile/?id=63">Patricia McCarney</a> at the <a href="http://www.daniels.utoronto.ca/">John H. Daniels Faculty of Architecture, Landscape, and Design</a>. The GCIF's goal is to, "...provide an established set of city indicators with a globally standardized methodology that allows for global comparability of city performance and knowledge sharing."
+            I was recruited as a data analyst with responsibilities that included cleaning and integrating the indicator data collected from cities around the globe and generate visualization tools that summarize and enable exploratory analysis.
+        </p>
+        <li>
+            Data Aggregation & Cleansing
+            <ul>
+                <li>Python scripts to extract, aggregate, and cleanse indicator data housed in database, spreadsheet, and text formats</li>
+                <li>Creation of document-based (MongoDB) database housing cleaned, normalized data suitable for web app visualization</li>
+            </ul>
+        </li>
+        <li>
+            <a href="http://protogcif.no-ip.ca">Data Visualization</a>
+            <ul>
+                <li>"Tally" - a d3-based web app that summarized indicator abundance </li>
+                <li>"Compare" - a d3-based, Parallel Coordinates visualization that displayed indicator data across cities and themes</li>
+                <li>"Correlate" - a d3-based scatter plot that displayed indicator data relationships across cities</li>
+            </ul>
+        </li>
+    </ul>
+
+    <br>
     
-  <h3 class="subsection"><a name="preparation">PREPARATION</h3>
+  <h3 class="subsection"><a name="preparation">INDUSTRY EXPERIENCE</h3>
   <table class="job-title">
     <colgroup>
       <col class="date" />
@@ -117,8 +156,9 @@
     </p>    
   </ul>		   
 
-  <br>    
+  <br>
 
+  <h3 class="subsection"><a name="preparation">ACADEMIC EXPERIENCE</h3>
   <table class="job-title">
     <colgroup>
       <col class="date" />
@@ -275,8 +315,59 @@
   <br>
   <br>
 
-<h3 class="subsection"><a name="skills">SKILLS</a></h3>
+    <h3 class="subsection"><a name="experience">OTHER EXPERIENCE</a></h3>
+    <table class="job-title">
+        <colgroup>
+            <col class="date" />
+            <col class="job-title" />
+            <col class="supervisor" />
+            <col class="university" />
+        </colgroup>
+        <thead>
+        <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Title</th>
+            <th scope="col">Supervisor</th>
+            <th scope="col">Institution</th>
+        </tr>
+        </thead>
+        <tr>
+            <td>2006</td>
+            <td>Research Assistant</td>
+            <td>
+                <a href="http://www.math.uwaterloo.ca/~bingalls/">
+                    Brian Ingalls
+                </a>
+            </td>
+            <td>Applied Math (Waterloo)</td>
+        </tr>
 
+        <tr>
+            <td>1997-1998</td>
+            <td>Research Assistant</td>
+            <td>
+                <a href="http://www.moleculargenetics.utoronto.ca/index/index.php/component/comprofiler/userprofile/Ray">
+                    Peter N Ray
+                </a>
+            </td>
+            <td>Molecular Genetics (Toronto)</td>
+        </tr>
+        <tr>
+            <td>1997</td>
+            <td>Research Assistant</td>
+            <td>
+                <a href="http://www.stmichaelshospital.com/research/profile.php?id=marsden&">
+                    Philip A Marsden
+                </a>
+            </td>
+            <td>Medicine (Toronto)</td>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+
+<h3 class="subsection"><a name="skills">SKILLS</a></h3>
 <h4>Computational</h4>
   <table class="skill-table">
     <colgroup>
@@ -309,49 +400,44 @@
     <tr>
       <td>Linux</td>
       <td>+++</td>
-      <td>Industry</td>
+      <td>Industry, Consulting</td>
     </tr>
     <tr>
       <td>Python</td>
-      <td>++</td>
-      <td>Industry</td>
+      <td>+++</td>
+      <td>Industry, Consulting</td>
     </tr>
     <tr>
-      <td>Java</td>
+      <td>MySQL, MongoDB</td>
       <td>++</td>
-      <td>Undergraduate</td>
-    </tr>
-    <tr>
-      <td>C/C++</td>
-      <td>+</td>
-      <td>Undergraduate</td>
-    </tr>
-    <tr>
-      <td>MySQL</td>
-      <td>++</td>
-      <td>Industry</td>
+      <td>Industry, Consulting</td>
     </tr>
     <tr>
       <td>HTML, CSS</td>
       <td>++</td>
-      <td>Personal</td>
+      <td>Consulting, Personal</td>
     </tr>
     <tr>
-      <td>d3.js, Javascript, JQuery</td>
+      <td>d3.js, Javascript</td>
       <td>++</td>
-      <td>Personal</td>
-    </tr>    
-    <tr>
-      <td>MongoDB, sqlite</td>
-      <td>+</td>
-      <td>Personal</td>
+      <td>Consulting, Personal</td>
     </tr>
     <tr>
-      <td>Django, AppEngine, node.js</td>
-      <td>+</td>
-      <td>Personal</td>
-    </tr>    
-    
+      <td>Django, Node.js</td>
+      <td>++</td>
+      <td>Consulting, Personal</td>
+    </tr>
+    <tr>
+        <td>Java</td>
+        <td>+</td>
+        <td>Undergraduate</td>
+    </tr>
+    <tr>
+        <td>C/C++</td>
+        <td>+</td>
+        <td>Undergraduate</td>
+    </tr>
+
   </table>
 
    <br>
@@ -409,59 +495,7 @@
 
   <br>
   <br>
-  
-<h3 class="subsection"><a name="experience">RELEVANT EXPERIENCE</a></h3>
-  <table class="job-title">
-    <colgroup>
-      <col class="date" />
-      <col class="job-title" />
-      <col class="supervisor" />
-      <col class="university" />  
-    </colgroup>
-    <thead>
-      <tr>
-        <th scope="col">Date</th>
-        <th scope="col">Title</th>
-        <th scope="col">Supervisor</th>
-        <th scope="col">Institution</th>
-      </tr>      
-    </thead>
-    <tr>
-      <td>2006</td>
-      <td>Research Assistant</td>
-      <td>
-        <a href="http://www.math.uwaterloo.ca/~bingalls/">
-          Brian Ingalls
-        </a>
-      </td>
-      <td>Applied Math (Waterloo)</td>      
-     </tr>
- 
-    <tr>
-      <td>1997-1998</td>
-      <td>Research Assistant</td>
-      <td>
-        <a href="http://www.moleculargenetics.utoronto.ca/index/index.php/component/comprofiler/userprofile/Ray">
-          Peter N Ray
-        </a>
-      </td>
-      <td>Molecular Genetics (Toronto)</td>      
-     </tr>
-    <tr>
-      <td>1997</td>
-      <td>Research Assistant</td>
-      <td>
-        <a href="http://www.stmichaelshospital.com/research/profile.php?id=marsden&">
-          Philip A Marsden
-        </a>
-      </td>
-      <td>Medicine (Toronto)</td>      
-     </tr>
-  </table>
-  
-  <br>
-  <br>
-  
+
   <h3 class="subsection"><a name="awards">AWARDS</a></h3>
   <table class="table-awards">
     <colgroup>
