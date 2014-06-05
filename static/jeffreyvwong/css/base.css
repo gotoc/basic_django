@@ -28,6 +28,19 @@
         text-indent: 50px;
     }
 
+    @media (min-width: 768px) {
+        img.caption{
+            max-width: 800px;
+            max-height: 600px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        img.caption.dual{
+            max-width: 350px;
+        }
+    }
+
 /*----------------------------
 	Begin: header
 -----------------------------*/
@@ -274,9 +287,9 @@
 /*----------------------------------------
    Begin: Modelling
 ----------------------------------------*/
-    .section-title{
-        text-decoration: underline;
-    }
+
+
+
 
     img.horizontal{
         max-width: 650px;

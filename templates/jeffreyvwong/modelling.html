@@ -11,9 +11,7 @@
 
   <div class="item">
     <h3 class="item-title">Bacterial Invaders</h3>
-    <span class="referenc
-
-    e">This work has been submitted (March 04, 2014)</span>
+    <span class="reference">This work has been submitted (March 04, 2014)</span>
     <p class="blurb">
       The word "noise" can mean a lot of things to different people. To most, it's an annoying
       aspect of daily life that comes at us in the form of loud sounds. To a statistics major, its the
@@ -34,7 +32,7 @@
       Below are microscope images of genetically identical HeLa cells, some harboring many bacteria
       (bright green spots; GFP) adjacent those with none. Why the difference?
     </p>
-    <img class="horizontal" src="/static/jeffreyvwong/images/modelling/invasion_fluorescent.png" /><br>
+    <img class="caption img-responsive" src="/static/jeffreyvwong/images/modelling/invasion_fluorescent.png" /><br>
     <p class="blurb">
       We had two pieces of evidence. First, invasion depends on successive, increasingly strong interactions
       between hosts and pathogen receptors (proteins that stick out of their surfaces) reminiscent of a zipper.
@@ -53,7 +51,7 @@
       (red, right). The slight rotation in the major axis - up and to the right - indicated that indeed,
       increasing host receptor number is proportional to bacterial uptake.
     </p><br>
-    <img class="horizontal" src="/static/jeffreyvwong/images/modelling/pca_flow.png" />
+    <img class="caption img-responsive" src="/static/jeffreyvwong/images/modelling/pca_flow.png" />
     <br>
     <p class="blurb">
       A primary goal of modeling is to provide a concise description. Based upon our
@@ -62,7 +60,7 @@
       model has but two parameters, which is orders of magnitude simpler than the numerous factors known
       to affect uptake.
     </p><br>
-    <img class="horizontal" src="/static/jeffreyvwong/images/modelling/power_law.png" />
+    <img class="caption img-responsive" src="/static/jeffreyvwong/images/modelling/power_law.png" />
     <p class="blurb">
       So is that it? Two parameters? Well not really. There is still a tremendous amount of variation in uptake
       for cells with the same amount of receptor. It remains to be seen what other factors can explain away
@@ -88,7 +86,7 @@
       (hysteresis, biphasic, adaptation). We were interested in seeing
       what trade-offs, if any, accompanied a network trying to accomplish this many jobs.
     </p>
-    <img class="horizontal" src="/static/jeffreyvwong/images/modelling/e2fNetwork.png" /><br>
+    <img class="caption img-responsive" src="/static/jeffreyvwong/images/modelling/e2fNetwork.png" /><br>
     <p class="blurb">
       Our approach was two-fold. First, we developed an algorithm that could learn
       typical parameter values which allowed our network to perform each "task".
@@ -97,7 +95,7 @@
       to minor perturbation. A major challenge here was to convey the changes in the high-dimensional
       parameter space in a simple yet meaningful fashion.
     </p><br>
-    <img class="horizontal" src="/static/jeffreyvwong/images/modelling/parameterChange.png" />
+    <img class="caption img-responsive" src="/static/jeffreyvwong/images/modelling/parameterChange.png" />
     <br>
     <p class="blurb">
       The above figure conveys the tension between a hysteretic response (baseline value) and a biphasic response.
@@ -132,14 +130,14 @@
       deliver different amounts of MYC to rat cells and measure E2F. The figure shows experiments where we
       deliver MYC (mCherry in red) at increasing levels to cells (DAPI in blue) and then track E2F (GFP in green).
     </p>
-    <img class="horizontal" src="/static/jeffreyvwong/images/modelling/modelling_confocal.png" /><br>
+    <img class="caption img-responsive" src="/static/jeffreyvwong/images/modelling/modelling_confocal.png" /><br>
     <p class="blurb">
       We automated the above technique so that we could track the MYC input (x-axis) and E2F
       output (y-axis) in hundreds of thousands of individual cells (data points) in one shot! Successive panels
       show results when the average doses of MYC was dialed up. These experiments revealed a heretofore unnoticed
       phenomenon: low MYC generates low E2F while high levels also leads to low levels!
     </p>
-    <img class="horizontal" src="/static/jeffreyvwong/images/modelling/scatterMolCell.png" /><br>
+    <img class="caption img-responsive" src="/static/jeffreyvwong/images/modelling/scatterMolCell.png" /><br>
     <p class="blurb">
       To help understand this behaviour better, we developed a mechanistic mathematical model of the wider MYC-E2F
       network to determine what was required to recapitulate our observations (figure below). The panel on the left
@@ -149,7 +147,7 @@
       Indeed, our model indicated that other known suppressors of E2F downstream of MYC could not generate this behaviour,
       and that an additional source of repression must exist (right panel, green trajectory), the nature of which remains unknown.
     </p>
-    <img class="horizontal" src="/static/jeffreyvwong/images/modelling/modelling_model.png" /><br>
+    <img class="caption img-responsive" src="/static/jeffreyvwong/images/modelling/modelling_model.png" /><br>
     <p class="blurb">
       We theorized the biphasic E2F response to MYC is a built-in safety mechanism: normal,
       low levels of MYC stimulated by, for example, growth factors can drive cell cycle entry,
@@ -188,7 +186,7 @@
         trying to interpret reams of computer output in text format a dizzying experience and so created a suite of R
         scripts to grab and plot the data pouring out of our simulations database (below: red- simulation; blue - data).
     </p>
-    <img id="nlp" src="/static/jeffreyvwong/images/visual/nlp.png" />
+    <img class="caption img-responsive" src="/static/jeffreyvwong/images/visual/nlp.png" />
     <p class="blurb">
         This analysis also included a variety of 2- and 3-dimensional analyses on proprietary clinical trial data provided
         by companies which, of course, I am unable to present. This 'slice-and-dice' approach enabled even
