@@ -103,9 +103,6 @@
                 <ul class="nav navbar-nav">
                     {% block navbarjump %}
                     {% endblock navbarjump %}
-                    <li><a href="#">Github</a></li>
-                    <li><a href="#about">CV</a></li>
-                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div><!-- /.nav-collapse -->
         </div><!-- /.container -->
@@ -125,7 +122,7 @@
             {% block footer %}
             <p class="pull-right"><a href="#">Back to top</a></p>
             <p>
-                <!--&copy; Jeffrey V Wong &middot;-->
+                &copy; Jeffrey V Wong &middot;
                 <a href="https://github.com/jvwong?tab=repositories">Github</a> &middot;
                 <a href="{% url 'jeffreyvwong_cv' %}">CV</a> &middot;
                 <a href="{% url 'jeffreyvwong_contact' %}">Contact</a> &middot;
