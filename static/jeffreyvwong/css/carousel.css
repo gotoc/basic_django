@@ -23,8 +23,7 @@ body {
 }
 
 .carousel-caption.invert{
-    background-color: rgba(0,0,0,0.7);
-
+    background-color: rgba(0,0,0,0.3);
 }
 
 /* Declare heights because of positioning of img element */

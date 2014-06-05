@@ -558,26 +558,10 @@
 	Begin: footer 
 -----------------------------*/
 
-  .footer{
-    height     : 100%;
-    width      : 80%;
-    max-width  : 800px;
-    margin     : 0px auto 25px;
-    padding    : 5px 15px;
+  footer p{
+    /*position: absolute;*/
+    bottom : 0px;
   }
-
-  .footer table{
-    margin: 0px auto;
-    width: 75%;
-  }
-
-  .footer td{
-    font-size: 0.9em;
-    text-align: center;
-    width: 25%;
-    background: none;
-  }
-
 
 /*----------------------------
 	End: footer
