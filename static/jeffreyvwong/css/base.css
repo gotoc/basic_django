@@ -369,13 +369,6 @@
         position: relative;
         left: 25px;
     }
-
-    .reference{
-        font-size: 0.9em;
-        font-style: normal;
-        margin-bottom: 1em;
-    }
-
     .current-author{
         font-weight: bold;
     }
