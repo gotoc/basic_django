@@ -63,7 +63,7 @@
 -----------------------------*/
 .content{
   /*max-width  : 1200px;*/
-  /*min-height : 700px;*/
+  min-height : 700px;
   /*margin     : 0px auto;*/
   /*text-align : left;*/
   padding-bottom : 5em;
