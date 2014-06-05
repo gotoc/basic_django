@@ -46,6 +46,20 @@
       padding-bottom : 5em;
     }
 
+    /*.item{*/
+        /*clear: both;*/
+    /*}*/
+
+    .item-title{
+        padding-top: 2em;
+        font-size: 1.5em;
+        color: #8D3C1E;
+    }
+
+    .list-group.list-contents{
+        margin-top: 2em;
+    }
+
 /*----------------------------
       End: content 
 -----------------------------*/
@@ -246,66 +260,6 @@
       End: Visual
 -----------------------------*/
 
-
-
-/*----------------------------------------
-   Begin: Modelling
-----------------------------------------*/
-
-
-
-
-    /*img.horizontal{*/
-        /*max-width: 650px;*/
-        /*margin-top: 15px;*/
-        /*margin-bottom: 15px;*/
-    /*}*/
-
-
-    /*blockquote{*/
-        /*font-size: 0.9em;*/
-        /*text-align: justify;*/
-        /*width: 75%;*/
-        /*font-style: italic;*/
-    /*}*/
-
-    /*img.vertical-left{*/
-        /*max-width: 350px;*/
-        /*max-height: 350px;*/
-        /*float: left;*/
-    /*}*/
-
-    /*img.vertical-right{*/
-        /*max-width: 350px;*/
-        /*max-height: 350px;*/
-        /*margin-left: 50px;*/
-    /*}*/
-
-
-    /*br#post-float{*/
-     /*clear: both;*/
-    /*}*/
-
-    .item-title{
-        padding-top: 2em;
-        font-size: 1.5em;
-        color: #8D3C1E;
-    }
-
-/*----------------------------
-  End: Visualization & Graphics
------------------------------*/
-
-/*----------------------------
-      Begin: Bio
------------------------------*/
-
-.section .item li{
-  font-size: 1.1em;
-}
-/*----------------------------
-      End: Bio
------------------------------*/
 
 /*----------------------------
       Begin: CV

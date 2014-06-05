@@ -9,10 +9,52 @@
 
 <div class="container">
 
-  <a href="{{ STATIC_URL }}jeffreyvwong/assets/jeffreyvwong_cv.pdf">
-      <button class="cv-download">Download PDF</button>
-  </a>
-  <h3 class="subsection">EDUCATION</h3>
+
+    <a href="{{ STATIC_URL }}jeffreyvwong/assets/jeffreyvwong_cv.pdf">
+        <button class="cv-download">PDF</button>
+    </a>
+
+    <div class="navbar navbar-static">
+        <div class="navbar-inner">
+            <ul role="navigation" class="nav">
+                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Jump to Section<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#education">Education</a>
+                        </li>
+                        <li>
+                            <a href="#data consulting">Data Consulting</a>
+                        </li>
+                        <li>
+                            <a href="#industry experience">Industry Experience</a>
+                        </li>
+                        <li>
+                            <a href="#academic experience">Academic Experience</a>
+                        </li>
+                        <li>
+                            <a href="#other experience">Other Experience</a>
+                        </li>
+                        <li>
+                            <a href="#skills">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#awards">Awards</a>
+                        </li>
+                        <li>
+                            <a href="#teaching">Teaching</a>
+                        </li>
+                        <li>
+                            <a href="#mentorship">Mentorship</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+  <h3 class="subsection"><a name="education">EDUCATION</a></h3>
   <table id="table-education">
     <colgroup>
       <col class="date" />
@@ -61,7 +103,7 @@
   <br>    
   <br>
 
-    <h3 class="subsection">DATA CONSULTING</h3>
+    <h3 class="subsection"><a name="data consulting">DATA CONSULTING</a></h3>
     <table class="job-title">
         <colgroup>
             <col class="date" />
@@ -100,7 +142,7 @@
 
     <br>
     
-  <h3 class="subsection">INDUSTRY EXPERIENCE</h3>
+  <h3 class="subsection"><a name="industry experience">INDUSTRY EXPERIENCE</a></h3>
   <table class="job-title">
     <colgroup>
       <col class="date" />
@@ -156,7 +198,7 @@
 
   <br>
 
-  <h3 class="subsection">ACADEMIC EXPERIENCE</h3>
+  <h3 class="subsection"><a name="academic experience">ACADEMIC EXPERIENCE</a></h3>
   <table class="job-title">
     <colgroup>
       <col class="date" />
@@ -313,7 +355,7 @@
   <br>
   <br>
 
-    <h3 class="subsection"><a name="experience">OTHER EXPERIENCE</a></h3>
+    <h3 class="subsection"><a name="other experience">OTHER EXPERIENCE</a></h3>
     <table class="job-title">
         <colgroup>
             <col class="date" />
@@ -649,6 +691,7 @@
     </tr>
 
   </table>
+
 
     <script>
         $(".cv-download").click(function(){
