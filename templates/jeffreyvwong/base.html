@@ -89,11 +89,13 @@
 <body>
 
     <div class="header">
-        {% block header %}
-            <a href="{% url 'jeffreyvwong_home' %}">
-               <h1 class="header-title">Jeffrey Wong</h1>
-            </a>
-        {% endblock header %}
+        <div class="container">
+            {% block header %}
+                <a href="{% url 'jeffreyvwong_home' %}">
+                   <h1 class="header-title">Jeffrey Wong</h1>
+                </a>
+            {% endblock header %}
+        </div>
     </div>
 
 
