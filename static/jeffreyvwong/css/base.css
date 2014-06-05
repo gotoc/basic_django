@@ -371,12 +371,9 @@
     }
 
     .reference{
-        position: relative;
-        left: 50px;
         font-size: 0.9em;
         font-style: normal;
-        width: 80%;
-        text-indent: 0px;
+        margin-bottom: 1em;
     }
 
     .current-author{
