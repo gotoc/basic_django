@@ -39,11 +39,23 @@
     }
 
 /*----------------------------
+      BEGIN: navbar override
+-----------------------------*/
+    .navbar{
+        margin-bottom: 0px;
+    }
+
+/*----------------------------
+      END: navbar override
+-----------------------------*/
+
+
+/*----------------------------
       Begin: content 
 -----------------------------*/
     .content{
       min-height : 700px;
-      padding-top: 3em;
+      /*padding-top: 3em;*/
       padding-bottom : 5em;
     }
 
