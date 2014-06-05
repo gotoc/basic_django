@@ -8,12 +8,23 @@
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {% block meta_description %}
       <meta name="description" content="jeffreyvwong.ca - Web property of Jeffrey V Wong" />
     {% endblock meta_description %}
 
     <meta name="author" content="jeffrey v wong" />
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+    <!-- Third party css -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
     <!-- Third party javascript -->
     <script type="text/javascript" src="/static/jeffreyvwong/js/jquery-1.9.1.js"></script>
@@ -76,40 +87,37 @@
 <body>
 
     <div class="header">
-    {% block header %}
-    <a href="{% url 'jeffreyvwong_home' %}">
-       <h1 class="header-title">Jeffrey Wong</h1>
-    </a>
-    {% endblock header %}
+        {% block header %}
+            <a href="{% url 'jeffreyvwong_home' %}">
+               <h1 class="header-title">Jeffrey Wong</h1>
+            </a>
+        {% endblock header %}
     </div>
 
 
     <div class="content">
-    {% block content %}
-    {% endblock content %}
+        {% block content %}
+        {% endblock content %}
     </div>
 
 
-    <div class="footer contact">
-    {% block footer %}
-        <table>
-            <tr>
-                <td>
-                    <a name="Github" href = "https://github.com/jvwong?tab=repositories">Github</a>
-                </td>
-                <td>
-                    <a name="CV" href = "{% url 'jeffreyvwong_cv' %}">CV</a>
-                </td>
-                <td>
-                    <a name="Contact" href = "{% url 'jeffreyvwong_contact' %}">Contact</a>
-                </td>
-                <td>
-                    <a name="Site"  href = "{% url 'admin:index' %}">Admin</a>
-                </td>
-            </tr>
-        </table>
-    {% endblock footer %}
+    <!-- FOOTER -->
+
+    <div class="container">
+        <footer>
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>&copy; Jeffrey V Wong &middot;
+                <a href="https://github.com/jvwong?tab=repositories">Github</a> &middot;
+                <a href="{% url 'jeffreyvwong_cv' %}">CV</a> &middot;
+                <a href="{% url 'jeffreyvwong_contact' %}">Contact</a> &middot;
+                <a href="{% url 'admin:index' %}">Admin</a>
+            </p>
+        </footer>
     </div>
+
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
 </body>
 </html>

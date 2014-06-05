@@ -5,7 +5,7 @@
     body {
         position: relative;
         margin:  10px 0px 0px;
-        padding:0px;
+        padding: 0px;
         font-family: "Helvetica Neue";
         font-family: sans-serif;
         font-size: 16px;
@@ -28,11 +28,6 @@
         text-indent: 50px;
     }
 
-    a:link, a:visited{
-        color: #000000;
-        outline: 0;
-    }
-
 /*----------------------------
 	Begin: header
 -----------------------------*/
@@ -41,11 +36,6 @@
       width      : 80%;
       max-width  : 800px;
       margin     : 0em auto;
-    }
-
-    .header a:link, a:visited{
-        text-decoration: none;
-        outline: 0;
     }
 
     h1.header-title {
@@ -72,12 +62,11 @@
       Begin: content 
 -----------------------------*/
 .content{
-  width      : 90%;
-  max-width  : 900px;
-  min-height : 700px;
-  margin     : 0px auto;
-  text-align : left;
-  padding    : 5px 15px 15px 15px;
+  /*max-width  : 1200px;*/
+  /*min-height : 700px;*/
+  /*margin     : 0px auto;*/
+  /*text-align : left;*/
+  padding-bottom : 5em;
 }
 
 /*----------------------------
@@ -450,11 +439,6 @@
 
     }
 
-    .subsection{
-        font-size: 1.3em;
-        text-decoration: underline;
-    }
-
     h4.publication{
         position: relative;
         left: 25px;
@@ -573,18 +557,6 @@
 /*----------------------------
 	Begin: footer 
 -----------------------------*/
-
-  .footer a:link, a:visited{
-    color: #9d9573;
-    text-decoration: none;
-    outline: 0;
-  }
-
-  .footer.contact a:link, a:visited{
-    color: #343434;
-    text-decoration: none;
-    outline: 0;
-  }
 
   .footer{
     height     : 100%;

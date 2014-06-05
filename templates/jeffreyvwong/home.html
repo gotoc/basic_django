@@ -1,11 +1,12 @@
 {% extends "jeffreyvwong/base.html" %}
 {% block head %}
-        <style>
-            a:link, a:visited{
-                text-decoration: none;
-                outline: 0;
-            }
-        </style>
+    <style>
+        a:link, a:visited{
+            text-decoration: none;
+            outline: 0;
+        }
+    </style>
+    <link href="/static/jeffreyvwong/css/carousel.css" rel="stylesheet">
 {% endblock head %}
 
 {% block title %}Home {{ block.super }}{% endblock title %}
@@ -15,60 +16,161 @@
                   involving mathematical modeling along with efforts in teaching, analytics and data visualization" />
 {% endblock meta_description %}
 
+{% block header %}
+{% endblock header %}
+
 {% block content %}
 
-    <div class="topic-list">
-
-        <div class="topic-container">
-            <a href="{% url 'jeffreyvwong_visualization' %}" name="visualizations"><h2 class="home-subsection-title">#Visualization</h2></a>
-
-          <figure class="effeckt-caption shadow" data-effeckt-type="cover-fade">
-                <img class="topic" src="/static/jeffreyvwong/images/panels/household.jpg" alt="">
-                <figcaption>
-                    <a class="effeckt-figcaption-link" href="{% url 'jeffreyvwong_visualization' %}">
-                        <div class="effeckt-figcaption-wrap">
-                            <p>
-                                Samples of visualization
-                            </p>
-                        </div>
-                    </a>
-                </figcaption>
-            </figure>
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <!--<img class="img-responsive" src="/static/jeffreyvwong/images/panels/household.jpg"  alt="modelling">-->
+                <div class="container-fluid">
+                    <div class="carousel-caption">
+                        <h1>Bacterial Invaders</h1>
+                        <p>Some pathogenic bacteria literally enter our cells</p>
+                        <p class="lead"><small>Why is this process so messy?</small></p>
+                        <p><a class="btn btn-sm btn-primary" href="#" role="button">Read more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <!--<img src="/static/jeffreyvwong/images/panels/flow.jpg" alt="modelling">-->
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Earthly Intelligence</h1>
+                        <p class="lead"><small>The Global City Indicator Facility collects data so that cities across the globe can share and compare their performance</small></p>
+                        <p><a class="btn btn-sm btn-primary" href="#" role="button">Read more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="/static/jeffreyvwong/images/panels/noise.jpg" alt="publications">
+                <div class="container">
+                    <div class="carousel-caption invert">
+                        <h1 class="">Bring the Noise!</h1>
+                        <p class="">Variability is all around us; Viral infection is no different</p>
+                        <p class="lead"><small>How is biological "noise" put to good use?</small></p>
+                        <p><a class="btn btn-lgm btn-primary" href="#" role="button">Read more</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+            <div class="col-lg-4">
+                <!--<img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">-->
+                <h2>Visualization</h2>
+                <p>Web applications, dashboards, and web-based visualizations</p>
+                <p><a class="btn btn-default" href="{% url 'jeffreyvwong_visualization' %}" role="button">View &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <!--<img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">-->
+                <h2>Modelling</h2>
+                <p>Modelling, simulation, and optimization from industry and academia</p>
+                <p><a class="btn btn-default" href="{% url 'jeffreyvwong_modelling' %}" role="button">View &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <!--<img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">-->
+                <h2>Publication</h2>
+                <p>Published work and reviews in experimental and computational biology</p>
+                <p><a class="btn btn-default" href="{% url 'jeffreyvwong_publication' %}" role="button">View &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+
+        <!-- START THE FEATURETTES -->
+
+        <!--<hr class="featurette-divider">-->
+
+        <!--<div class="row featurette">-->
+            <!--<div class="col-md-7">-->
+                <!--<h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>-->
+                <!--<p class="lead">Donec ullamcorper nulla non metus auctor fringilla</p>-->
+            <!--</div>-->
+            <!--<div class="col-md-5">-->
+                <!--<img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <!-- /END THE FEATURETTES -->
 
 
 
-        <div class="topic-container">
-            <a href="{%  url 'jeffreyvwong_modelling' %}" name="modelling"><h2 class="home-subsection-title">#Modelling</h2></a>
 
-            <figure class="effeckt-caption shadow" data-effeckt-type="cover-fade">
-                <img src="/static/jeffreyvwong/images/panels/flow.jpg" alt="">
-                <figcaption>
-                    <a class="effeckt-figcaption-link" href="{% url 'jeffreyvwong_modelling' %}">
-                        <div class="effeckt-figcaption-wrap">
-                            <p>Work from industry and academia in mathematical modelling</p>
-                        </div>
-                    </a>
-                </figcaption>
-            </figure>
-        </div>
+    </div><!-- /.container -->
 
-        <div class="topic-container">
-            <a href="{% url 'jeffreyvwong_publication' %}" name="publication"><h2 class="home-subsection-title">#Publications</h2></a>
 
-              <figure class="effeckt-caption shadow" data-effeckt-type="cover-fade">
-                <img src="/static/jeffreyvwong/images/panels/cellcover.jpg" alt="">
-                <figcaption>
-                    <a class="effeckt-figcaption-link" href="{% url 'jeffreyvwong_publication' %}">
-                        <div class="effeckt-figcaption-wrap">
-                            <p>Published work in experimental and computational biology</p>
-                        </div>
-                    </a>
-                </figcaption>
-            </figure>
-        </div>
+<!--<div class="topic-list">-->
 
-    </div>
+        <!--<div class="topic-container">-->
+            <!--<a href="{% url 'jeffreyvwong_visualization' %}" name="visualizations"><h2 class="home-subsection-title">#Visualization</h2></a>-->
+
+          <!--<figure class="effeckt-caption shadow" data-effeckt-type="cover-fade">-->
+                <!--<img class="topic" src="/static/jeffreyvwong/images/panels/household.jpg" alt="">-->
+                <!--<figcaption>-->
+                    <!--<a class="effeckt-figcaption-link" href="{% url 'jeffreyvwong_visualization' %}">-->
+                        <!--<div class="effeckt-figcaption-wrap">-->
+                            <!--<p>-->
+                                <!--Samples of visualization-->
+                            <!--</p>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                <!--</figcaption>-->
+            <!--</figure>-->
+        <!--</div>-->
+
+
+
+        <!--<div class="topic-container">-->
+            <!--<a href="{%  url 'jeffreyvwong_modelling' %}" name="modelling"><h2 class="home-subsection-title">#Modelling</h2></a>-->
+
+            <!--<figure class="effeckt-caption shadow" data-effeckt-type="cover-fade">-->
+                <!--<img src="/static/jeffreyvwong/images/panels/flow.jpg" alt="">-->
+                <!--<figcaption>-->
+                    <!--<a class="effeckt-figcaption-link" href="{% url 'jeffreyvwong_modelling' %}">-->
+                        <!--<div class="effeckt-figcaption-wrap">-->
+                            <!--<p>Work from industry and academia in mathematical modelling</p>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                <!--</figcaption>-->
+            <!--</figure>-->
+        <!--</div>-->
+
+        <!--<div class="topic-container">-->
+            <!--<a href="{% url 'jeffreyvwong_publication' %}" name="publication"><h2 class="home-subsection-title">#Publications</h2></a>-->
+
+              <!--<figure class="effeckt-caption shadow" data-effeckt-type="cover-fade">-->
+                <!--<img src="/static/jeffreyvwong/images/panels/cellcover.jpg" alt="">-->
+                <!--<figcaption>-->
+                    <!--<a class="effeckt-figcaption-link" href="{% url 'jeffreyvwong_publication' %}">-->
+                        <!--<div class="effeckt-figcaption-wrap">-->
+                            <!--<p>Published work in experimental and computational biology</p>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                <!--</figcaption>-->
+            <!--</figure>-->
+        <!--</div>-->
+
+    <!--</div>-->
 
 
 {% endblock content %}
