@@ -43,15 +43,16 @@
 -----------------------------*/
     .content{
       min-height : 700px;
+      padding-top: 3em;
       padding-bottom : 5em;
     }
 
-    /*.item{*/
-        /*clear: both;*/
-    /*}*/
+    .item{
+        padding-bottom: 4em;
+    }
 
     .item-title{
-        padding-top: 2em;
+        /*padding-top: 2em;*/
         font-size: 1.5em;
         color: #8D3C1E;
     }
